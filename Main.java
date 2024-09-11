@@ -17,10 +17,15 @@ public class Main {
         
         System.out.println("Cantidad de dulces en el frasco: " + frasco.consultarCantidad());
         int cantidadSacar = 150;
-        FrascoDulce sacar = new FrascoDulce();
+        int sacar = frasco.sacarDulce(cantidadSacar);
         
-        System.out.println("La cantidad de dulce que se sacó del frasco es: "+ sacar.sacarDulce(cantidadSacar));
-        
+        System.out.println("La cantidad de dulce que se sacó del frasco es: "+ sacar);
+        System.out.println("Cantidad de dulces en el frasco: " + frasco.consultarCantidad());
+
+        int nuevaCantidadSacar = 50;
+        int sacarOtra = frasco.sacarDulce(nuevaCantidadSacar);
+        System.out.println("La cantidad de dulce que se sacó del frasco es: "+ sacarOtra);
+        System.out.println("Cantidad de dulces en el frasco: " + frasco.consultarCantidad());
         
     }
 }
