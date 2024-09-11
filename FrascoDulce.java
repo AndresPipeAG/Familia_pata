@@ -11,7 +11,7 @@ public class FrascoDulce {
 
     public boolean envasarDulce(int cantidad){
         if (this.cantidad + cantidad > 200) {
-            this.cantidad = 200;
+            //this.cantidad = 200;
             return false;
         } else {
             this.cantidad += cantidad;
@@ -28,7 +28,6 @@ public class FrascoDulce {
         } else {
             cantidadSacada = this.cantidad;
             this.cantidad = 0;
-            return this.consultarCantidad();
         }
         return cantidadSacada;
     }
